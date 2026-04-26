@@ -28,7 +28,7 @@ jobs:
           gradle build --no-daemon
         fi
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: HurricaneMod-1.20.1-1.0.0
         path: HurricaneMod/build/libs/*.jar
