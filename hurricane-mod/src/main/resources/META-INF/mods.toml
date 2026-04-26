@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="hurricanemod"
+version="1.0.0"
+displayName="Hurricane Mod"
+authors="AI Studio"
+description='''
+Adds a realistic hurricane visual effect built with vanilla particles, surrounding the player.
+Use /hurricane start and /hurricane stop to control it.
+'''
+
+[[dependencies.hurricanemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.hurricanemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
