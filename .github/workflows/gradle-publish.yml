@@ -16,11 +16,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Ensure gradlew is executable
-      run: if [ -f HurricaneMod/gradlew ]; then chmod +x HurricaneMod/gradlew; fi
+      run: if [ -f hurricane-mod/gradlew ]; then chmod +x hurricane-mod/gradlew; fi
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build with Gradle
-      working-directory: ./HurricaneMod
+      working-directory: ./hurricane-mod
       run: |
         if [ -f gradlew ]; then
           ./gradlew build --no-daemon
@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: HurricaneMod-1.20.1-1.0.0
-        path: HurricaneMod/build/libs/*.jar
+        path: hurricane-mod/build/libs/*.jar
